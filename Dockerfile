@@ -7,9 +7,9 @@ PHPV1=6                                                                         
 echo "################## [$(date)] Setup PHP $PHPV0.$PHPV1 Preflight vars ##################" && \
 PHPCHGURL=http://php.net/ChangeLog-$PHPV0.php                                                 && \
 PGKDIR=/home/abuild/packages                                                                  && \
-PKGS1="cli|common|ctype|curl|dom|fpm|ftp|gd|gettext|imap|json|ldap|mcrypt|mysql|mysqli"       && \
-PKGS2="opcache|openssl|pdo|pdo_mysql|pdo_pgsql|pgsql|soap|sockets|xml|xmlreader|zip|zlib"     && \
-PKGS3=""                                                                                      && \
+PKGS1="cli|common|ctype|curl|dom|fpm|ftp|gd|gettext|imap|json|ldap|mcrypt|memcache"           && \
+PKGS2="mysql|mysqli|opcache|openssl|pdo|pdo_mysql|pdo_pgsql|pgsql|redis|soap|sockets"         && \
+PKGS3="xdebug|xml|xmlreader|zip|zlib"                                                         && \
 PKGS="$PKGS1|$PKGS2|$PKGS3"                                                                   && \
 BLACKFURL=https://blackfire.io/api/v1/releases/probe/php/alpine/amd64/$PHPV0$PHPV1            && \
 echo "################## [$(date)] Add Packages ##################"                           && \
